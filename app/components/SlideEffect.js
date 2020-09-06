@@ -12,35 +12,35 @@ class SlideEffect extends React.Component {
 	render() {
 		const { classes } = this.props;
 
-		const textTOP = `junior web developer`;
-		const textBOT = `gay nigger from ou`;
+		const textTOP = `________________ilyas     sagi                    `;
+		const textBOT = `baiguzhin ___________                            `;
 
 		return (
 			<Parallax>
 				<div className="bit">
 					<Typography variant="h1" className={`${classes.outlinedHiddenText} ${classes.mainText} ${classes.textOnBot}`}>
-						<Layer settings={{ speed: 1, type: ["translateX"] }}>
+						<Layer settings={{ speed: 0.1, type: ["translateX"] }}>
 							<span className="outlinedText row">
 								<span>{textTOP}</span>
 							</span>
 						</Layer>
 					</Typography>
 					<Typography variant="h1" className={`${classes.filledHiddenText} ${classes.mainText} ${classes.textOnBot}`}>
-						<Layer settings={{ speed: 1, type: ["translateX"] }}>
+						<Layer settings={{ speed: 0.1, type: ["translateX"] }}>
 							<span className="row">
 								<span>{textTOP}</span>
 							</span>
 						</Layer>
 					</Typography>
 					<Typography variant="h1" className={`${classes.outlinedHiddenText} ${classes.mainText} ${classes.textOnTop}`}>
-						<Layer settings={{ speed: -1, type: ["translateX"] }}>
+						<Layer settings={{ speed: -0.1, type: ["translateX"] }}>
 							<span className="outlinedText row">
 								<span>{textBOT}</span>
 							</span>
 						</Layer>
 					</Typography>
 					<Typography variant="h1" className={`${classes.filledHiddenText} ${classes.mainText} ${classes.textOnTop}`}>
-						<Layer settings={{ speed: -1, type: ["translateX"] }}>
+						<Layer settings={{ speed: -0.1, type: ["translateX"] }}>
 							<span className="row">
 								<span>{textBOT}</span>
 							</span>
