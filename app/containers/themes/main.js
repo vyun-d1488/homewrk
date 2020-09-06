@@ -1,7 +1,7 @@
 export const mainTheme = {
 	palette: {
 		background: {
-			default: "#222222",
+			default: "#000",
 		},
 	},
 	typography: {

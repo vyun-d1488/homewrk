@@ -1,6 +1,8 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ProgressBarPlugin = require("progress-bar-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
+
 const path = require("path");
 
 const dev = process.env.NODE_ENV !== "production";
@@ -61,6 +63,9 @@ module.exports = {
 	},
 	plugins: [
 		new ProgressBarPlugin(),
+		new CopyPlugin({
+			patterns: [{ from: "app/images", to: "./images" }],
+		}),
 		new MiniCssExtractPlugin({
 			filename: "style.css",
 		}),

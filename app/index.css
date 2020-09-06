@@ -8,6 +8,13 @@
 	-webkit-text-size-adjust: none;
 	-ms-text-size-adjust: none;
 	box-sizing: border-box;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
 }
 
 .bit {
@@ -30,17 +37,93 @@ body {
 .outlinedText {
 	color: transparent;
 	-webkit-text-stroke-width: 0.1vh;
-	-webkit-text-stroke-color: rgb(255, 255, 255);
+	-webkit-text-stroke-color: rgba(255, 255, 255);
 }
 
 .row {
+	width: 192%;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
-	font-size: 20vmin;
+	font-size: 10vmin;
 }
 
 .row > span {
 	transform-origin: 0 0;
 	transform: translate(0, 0) rotate(0) scaleY(1);
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+	position: absolute;
+	border-radius: 5px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	will-change: transform;
+	filter: brightness(0.5);
+	margin: -40vh auto;
+}
+
+.card1 {
+	min-width: 60ch;
+	min-height: 60ch;
+	width: 45vw;
+	height: 45vw;
+	max-width: 100ch;
+	max-height: 100ch;
+
+	top: 55%;
+	left: 0;
+	right: 0;
+
+	background-image: url("./images/back.png");
+}
+
+.card2 {
+	width: 25ch;
+	height: 100ch;
+	top: 65%;
+	left: 0;
+	right: 0;
+
+	background-image: url("./images/1.png");
+}
+
+.card3 {
+	width: 25ch;
+	height: 125ch;
+	top: 55%;
+	left: 0;
+	right: 0;
+
+	background-image: url("./images/2.png");
+}
+
+.card4 {
+	width: 35ch;
+	height: 125ch;
+	top: 55%;
+	left: 0;
+	right: 0;
+
+	background-image: url("./images/3.png");
+}
+
+.card5 {
+	width: 25ch;
+	height: 125ch;
+	top: 55%;
+	left: 0;
+	right: 0;
+
+	background-image: url("./images/4.png");
 }
