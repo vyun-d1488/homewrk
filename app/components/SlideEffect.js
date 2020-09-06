@@ -12,7 +12,7 @@ class SlideEffect extends React.Component {
 	render() {
 		const { classes } = this.props;
 
-		const textTOP = `________________ilyas     sagi                    `;
+		const textTOP = `________________ilyas   &  sagi                    `;
 		const textBOT = `baiguzhin ___________                            `;
 
 		return (
