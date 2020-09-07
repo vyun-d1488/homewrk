@@ -73,11 +73,17 @@ body {
 	margin: -40vh auto;
 }
 
+.card2,
+.card3,
+.card4,
+.card5 {
+	background-size: 60%;
+}
 .card1 {
-	min-width: 60ch;
+	min-width: 80ch;
 	min-height: 60ch;
 	width: 45vw;
-	height: 45vw;
+	height: 25vw;
 	max-width: 100ch;
 	max-height: 100ch;
 
@@ -90,10 +96,11 @@ body {
 
 .card2 {
 	width: 25ch;
-	height: 100ch;
-	top: 65%;
+	height: 125ch;
+	top: 55%;
 	left: 0;
 	right: 0;
+	background-size: 58%;
 
 	background-image: url("./images/1.png");
 }

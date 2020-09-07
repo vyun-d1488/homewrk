@@ -19,7 +19,7 @@ export const useStyles = (theme) => ({
 		whiteSpace: "nowrap",
 	},
 	textOnTop: {
-		top: "25vh",
+		top: "16vh",
 		left: "0",
 		right: "0",
 	},
