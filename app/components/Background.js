@@ -33,10 +33,10 @@ export function Background() {
 	return (
 		<div className="container" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
 			<animated.div className="card1" style={{ transform: props.xy.interpolate(trans1), backgroundImage: `url(${background || loading})` }} />
-			<animated.div className="card2" style={{ transform: props.xy.interpolate(trans2), backgroundImage: `url(${first || ""})` }} />
-			<animated.div className="card3" style={{ transform: props.xy.interpolate(trans3), backgroundImage: `url(${second || ""})` }} />
-			<animated.div className="card4" style={{ transform: props.xy.interpolate(trans4), backgroundImage: `url(${third || ""})` }} />
-			<animated.div className="card5" style={{ transform: props.xy.interpolate(trans5), backgroundImage: `url(${fourth || ""})` }} />
+			<animated.div className="card2" style={{ transform: props.xy.interpolate(trans2), backgroundImage: `url(${background ? first : ""})` }} />
+			<animated.div className="card3" style={{ transform: props.xy.interpolate(trans3), backgroundImage: `url(${background ? second : ""})` }} />
+			<animated.div className="card4" style={{ transform: props.xy.interpolate(trans4), backgroundImage: `url(${background ? third : ""})` }} />
+			<animated.div className="card5" style={{ transform: props.xy.interpolate(trans5), backgroundImage: `url(${background ? fourth : ""})` }} />
 		</div>
 	);
 }
