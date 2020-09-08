@@ -23,11 +23,12 @@ const useProgressiveImage = (src) => {
 
 export function Background() {
 	const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 1, tension: 50, friction: 40 } }));
-	const background = useProgressiveImage("./images/back.png");
 	const first = useProgressiveImage("./images/1.png");
 	const second = useProgressiveImage("./images/2.png");
 	const third = useProgressiveImage("./images/3.png");
 	const fourth = useProgressiveImage("./images/4.png");
+	const background = useProgressiveImage("./images/back.png");
+
 	const loading = "./images/load.gif";
 
 	return (

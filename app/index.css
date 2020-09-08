@@ -83,6 +83,7 @@ body {
 	opacity: 1;
 	animation-name: fadein;
 	animation-duration: 0.4s;
+	transition: 3s;
 }
 
 .card2,
