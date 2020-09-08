@@ -9,7 +9,7 @@ import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
 import { mainTheme } from "./containers/themes/main";
 
-import Root from "./components/Root";
+import { RootComponent } from "./components/Root";
 
 const theme = createMuiTheme(mainTheme);
 
@@ -17,7 +17,7 @@ ReactDOM.render(
 	<MuiThemeProvider theme={theme}>
 		<CssBaseline />
 		<ParallaxProvider>
-			<Root />
+			<RootComponent />
 		</ParallaxProvider>
 	</MuiThemeProvider>,
 	document.getElementById("root")

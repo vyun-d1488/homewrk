@@ -5,8 +5,8 @@
 	"author": "vyun-d1488 <ilyaspiypiy@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"server:start": "node ./build/app.js",
-		"server:dev": "nodemon --exec babel-node ./src/index.js",
+		"server:start": "node ./build/index.js",
+		"server:dev": "nodemon ./build/index.js",
 		"build": "concurrently \"yarn build:dev\" \"yarn build:babel\"",
 		"build:clean": "rimraf ./build",
 		"build:babel": "babel -w src --out-dir build/ --copy-files",
@@ -48,7 +48,7 @@
 		"react-use": "^15.3.3",
 		"rimraf": "^3.0.2",
 		"terser-webpack-plugin": "^4.1.0",
-		"webpack": "^5.0.0-beta.29",
+		"webpack": "4",
 		"webpack-cli": "^3.3.12"
 	}
 }

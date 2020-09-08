@@ -3,7 +3,7 @@ import path from "path";
 import indexRouter from "@/routes/index";
 
 export const loadExpress = () => {
-	const pathToViews = path.join(process.cwd(), "src/views/index.html");
+	const pathToViews = path.resolve(__dirname + "/../views/index.html");
 	const app = express();
 
 	app.use("/api", indexRouter);

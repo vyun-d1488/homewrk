@@ -90,8 +90,6 @@ body {
 	top: 55%;
 	left: 0;
 	right: 0;
-
-	background-image: url("./images/back.png");
 }
 
 .card2 {
@@ -101,8 +99,6 @@ body {
 	left: 0;
 	right: 0;
 	background-size: 58%;
-
-	background-image: url("./images/1.png");
 }
 
 .card3 {
@@ -111,8 +107,6 @@ body {
 	top: 55%;
 	left: 0;
 	right: 0;
-
-	background-image: url("./images/2.png");
 }
 
 .card4 {
@@ -121,8 +115,6 @@ body {
 	top: 55%;
 	left: 0;
 	right: 0;
-
-	background-image: url("./images/3.png");
 }
 
 .card5 {
@@ -131,6 +123,4 @@ body {
 	top: 55%;
 	left: 0;
 	right: 0;
-
-	background-image: url("./images/4.png");
 }
