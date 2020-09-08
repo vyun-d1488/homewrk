@@ -28,14 +28,15 @@ export function Background() {
 	const second = useProgressiveImage("./images/2.png");
 	const third = useProgressiveImage("./images/3.png");
 	const fourth = useProgressiveImage("./images/4.png");
+	const loading = "./images/load.gif";
 
 	return (
 		<div className="container" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
-			<animated.div className="card1" style={{ transform: props.xy.interpolate(trans1), backgroundImage: `url(${background || "LOADING"})` }} />
-			<animated.div className="card2" style={{ transform: props.xy.interpolate(trans2), backgroundImage: `url(${first || "LOADING"})` }} />
-			<animated.div className="card3" style={{ transform: props.xy.interpolate(trans3), backgroundImage: `url(${second || "LOADING"})` }} />
-			<animated.div className="card4" style={{ transform: props.xy.interpolate(trans4), backgroundImage: `url(${third || "LOADING"})` }} />
-			<animated.div className="card5" style={{ transform: props.xy.interpolate(trans5), backgroundImage: `url(${fourth || "LOADING"})` }} />
+			<animated.div className="card1" style={{ transform: props.xy.interpolate(trans1), backgroundImage: `url(${background || loading})` }} />
+			<animated.div className="card2" style={{ transform: props.xy.interpolate(trans2), backgroundImage: `url(${first || ""})` }} />
+			<animated.div className="card3" style={{ transform: props.xy.interpolate(trans3), backgroundImage: `url(${second || ""})` }} />
+			<animated.div className="card4" style={{ transform: props.xy.interpolate(trans4), backgroundImage: `url(${third || ""})` }} />
+			<animated.div className="card5" style={{ transform: props.xy.interpolate(trans5), backgroundImage: `url(${fourth || ""})` }} />
 		</div>
 	);
 }
