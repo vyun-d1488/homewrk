@@ -1,4 +1,5 @@
 import express from "express";
+import path from "path";
 import indexRouter from "@/routes/index";
 
 export const loadExpress = () => {
@@ -13,7 +14,7 @@ export const loadExpress = () => {
 	});
 
 	app.get("*", (req, res) => {
-		res.sendFile("index");
+		res.sendFile(path.resolve(__dirname + "/../public/index.html"));
 	});
 
 	return app;

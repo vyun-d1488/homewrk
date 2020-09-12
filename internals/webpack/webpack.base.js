@@ -10,7 +10,7 @@ const alias = require("../alias");
 const plugins = [
 	new ProgressBarPlugin(),
 	new HtmlWebPackPlugin({
-		template: "./src/views/index.html",
+		template: "./app/temp/index.html",
 		filename: "./index.html",
 	}),
 	new MiniCssExtractPlugin({
