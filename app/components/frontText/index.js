@@ -18,7 +18,6 @@ class FrontText extends React.Component {
 
 		return (
 			<Parallax>
-				<h1 style={{ color: "white" }}>Ilyas and Sagi's portfolio</h1>
 				<div className={s.bit}>
 					<Typography variant="h1" className={`${classes.outlinedHiddenText} ${classes.mainText} ${classes.textOnBot}`}>
 						<Layer settings={{ speed: 1, type: ["translateX"] }}>

@@ -14,15 +14,15 @@ module.exports = require("./webpack.base")({
 		},
 	},
 	output: {
-		filename: "[name].js",
-		chunkFilename: "[name].chunk.js",
+		filename: "[contenthash].js",
+		chunkFilename: "[contenthash].chunk.js",
 	},
 	plugins: [
 		new UglifyJsPlugin(),
 		new webpack.optimize.ModuleConcatenationPlugin(),
 
 		new HtmlWebpackPlugin({
-			template: "src/views/index.html",
+			template: "app/temp/index.html",
 			filename: "index.html",
 			minify: {
 				removeComments: true,
