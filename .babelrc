@@ -1,8 +1,9 @@
 {
-	"presets": ["@babel/preset-env", "@babel/preset-react"],
 	"plugins": [
-		"@babel/plugin-proposal-class-properties",
-		"@babel/transform-runtime",
+		"styled-components",
+		"syntax-dynamic-import",
+		"transform-runtime",
+		"transform-async-to-generator",
 		[
 			"babel-plugin-root-import",
 			{
@@ -10,5 +11,22 @@
 				"rootPathSuffix": "./src/"
 			}
 		]
-	]
+	],
+	"presets": [
+		[
+			"env",
+			{
+				"modules": false
+			}
+		],
+		"react",
+		"stage-0",
+		"babel-preset-env",
+		"babel-preset-react"
+	],
+	"env": {
+		"production": {
+			"plugins": ["transform-react-remove-prop-types", "transform-react-constant-elements"]
+		}
+	}
 }

@@ -1,9 +1,7 @@
 import express from "express";
-import path from "path";
 import indexRouter from "@/routes/index";
 
 export const loadExpress = () => {
-	const pathToViews = path.resolve(__dirname + "/../views/index.html");
 	const app = express();
 
 	app.use("/api", indexRouter);
@@ -15,7 +13,7 @@ export const loadExpress = () => {
 	});
 
 	app.get("*", (req, res) => {
-		res.sendFile(pathToViews);
+		res.sendFile("index");
 	});
 
 	return app;

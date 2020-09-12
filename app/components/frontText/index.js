@@ -5,9 +5,11 @@ import Parallax, { Layer } from "react-parallax-scroll";
 import Typography from "@material-ui/core/Typography";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/styles";
-import { useStyles } from "../containers/styles/useStyles";
+import { useStyles } from "containers/styles/useStyles";
 
-class SlideEffect extends React.Component {
+import s from "./index.css";
+
+class FrontText extends React.Component {
 	render() {
 		const { classes } = this.props;
 
@@ -17,31 +19,31 @@ class SlideEffect extends React.Component {
 		return (
 			<Parallax>
 				<h1 style={{ color: "white" }}>Ilyas and Sagi's portfolio</h1>
-				<div className="bit">
+				<div className={s.bit}>
 					<Typography variant="h1" className={`${classes.outlinedHiddenText} ${classes.mainText} ${classes.textOnBot}`}>
 						<Layer settings={{ speed: 1, type: ["translateX"] }}>
-							<span className="outlinedText row">
+							<span className={`${s.outlinedText} ${s.row}`}>
 								<span>{textTOP}</span>
 							</span>
 						</Layer>
 					</Typography>
 					<Typography variant="h1" className={`${classes.filledHiddenText} ${classes.mainText} ${classes.textOnBot}`}>
 						<Layer settings={{ speed: 1, type: ["translateX"] }}>
-							<span className="row">
+							<span className={s.row}>
 								<span>{textTOP}</span>
 							</span>
 						</Layer>
 					</Typography>
 					<Typography variant="h1" className={`${classes.outlinedHiddenText} ${classes.mainText} ${classes.textOnTop}`}>
 						<Layer settings={{ speed: -1, type: ["translateX"] }}>
-							<span className="outlinedText row">
+							<span className={`${s.outlinedText} ${s.row}`}>
 								<span>{textBOT}</span>
 							</span>
 						</Layer>
 					</Typography>
 					<Typography variant="h1" className={`${classes.filledHiddenText} ${classes.mainText} ${classes.textOnTop}`}>
 						<Layer settings={{ speed: -1, type: ["translateX"] }}>
-							<span className="row">
+							<span className={s.row}>
 								<span>{textBOT}</span>
 							</span>
 						</Layer>
@@ -52,8 +54,8 @@ class SlideEffect extends React.Component {
 	}
 }
 
-SlideEffect.propTypes = {
+FrontText.propTypes = {
 	classes: PropTypes.object.isRequired,
 };
 
-export const MainText = withStyles(useStyles)(SlideEffect);
+export const Text = withStyles(useStyles)(FrontText);
