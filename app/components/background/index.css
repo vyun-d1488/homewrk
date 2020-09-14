@@ -1,11 +1,3 @@
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
 .container {
 	display: flex;
 	align-items: center;
@@ -18,64 +10,47 @@
 .card4,
 .card5 {
 	position: absolute;
-	border-radius: 5px;
-	background-position: center center;
-	background-repeat: no-repeat;
 	will-change: transform;
-	filter: brightness(0.5);
+	filter: brightness(0.7);
 	margin: -40vh auto;
-	opacity: 1;
-	animation-name: fadein;
-	animation-duration: 0.4s;
 }
 
-.card2,
-.card3,
-.card4,
-.card5 {
-	background-size: 60%;
-}
 .card1 {
-	min-width: 80ch;
-	min-height: 60ch;
-	width: 45vw;
-	height: 25vw;
-	max-width: 100ch;
-	max-height: 100ch;
-	top: 55%;
+	width: 115vh;
+	top: 40%;
 	left: 0;
 	right: 0;
 }
 
 .card2 {
-	width: 25ch;
-	height: 125ch;
-	top: 55%;
+	width: 200px;
+	top: 100%;
 	left: 0;
 	right: 0;
-	background-size: 58%;
 }
 
 .card3 {
-	width: 25ch;
-	height: 125ch;
-	top: 55%;
+	width: 210px;
+	top: 100%;
 	left: 0;
 	right: 0;
 }
 
 .card4 {
-	width: 35ch;
-	height: 125ch;
-	top: 55%;
+	width: 290px;
+	top: 100%;
 	left: 0;
 	right: 0;
 }
 
 .card5 {
-	width: 25ch;
-	height: 125ch;
-	top: 55%;
+	width: 210px;
+	top: 101%;
 	left: 0;
 	right: 0;
+}
+
+.playerImage {
+	width: 100%;
+	height: auto;
 }

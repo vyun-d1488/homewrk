@@ -1,10 +1,7 @@
 import React from "react";
+import { background, first, second, third, fourth } from "assets";
 import { useSpring, animated } from "react-spring";
-import background from "assets/images/back.png";
-import first from "assets/images/1.png";
-import second from "assets/images/2.png";
-import third from "assets/images/3.png";
-import fourth from "assets/images/4.png";
+import { SmoothImage } from "components/common";
 
 import s from "./index.css";
 
@@ -19,11 +16,21 @@ export function Background() {
 	const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 1, tension: 50, friction: 40 } }));
 	return (
 		<div className={s.container} onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
-			<animated.div className={s.card1} style={{ transform: props.xy.interpolate(trans1), backgroundImage: `url(${background})` }} />
-			<animated.div className={s.card2} style={{ transform: props.xy.interpolate(trans2), backgroundImage: `url(${first})` }} />
-			<animated.div className={s.card3} style={{ transform: props.xy.interpolate(trans3), backgroundImage: `url(${second})` }} />
-			<animated.div className={s.card4} style={{ transform: props.xy.interpolate(trans4), backgroundImage: `url(${third})` }} />
-			<animated.div className={s.card5} style={{ transform: props.xy.interpolate(trans5), backgroundImage: `url(${fourth})` }} />
+			<animated.div className={s.card1} style={{ transform: props.xy.interpolate(trans1) }}>
+				<SmoothImage src={background} imgClassName={s.playerImage} transitionTime={1.0} />
+			</animated.div>
+			<animated.div className={s.card2} style={{ transform: props.xy.interpolate(trans2) }}>
+				<SmoothImage src={first} imgClassName={s.playerImage} transitionTime={1.0} />
+			</animated.div>
+			<animated.div className={s.card3} style={{ transform: props.xy.interpolate(trans3) }}>
+				<SmoothImage src={second} imgClassName={s.playerImage} transitionTime={1.0} />
+			</animated.div>
+			<animated.div className={s.card4} style={{ transform: props.xy.interpolate(trans4) }}>
+				<SmoothImage src={third} imgClassName={s.playerImage} transitionTime={1.0} />
+			</animated.div>
+			<animated.div className={s.card5} style={{ transform: props.xy.interpolate(trans5) }}>
+				<SmoothImage src={fourth} imgClassName={s.playerImage} transitionTime={1.0} />
+			</animated.div>
 		</div>
 	);
 }
