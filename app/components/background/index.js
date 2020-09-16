@@ -12,7 +12,7 @@ const trans3 = (x, y) => `translate3d(${x / 9 - 150}px,${y / 6 - 350}px,0)`;
 const trans4 = (x, y) => `translate3d(${x / 8 + 200}px,${y / 6 - 350}px,0)`;
 const trans5 = (x, y) => `translate3d(${x / 6 + 450}px,${y / 6 - 350}px,0)`;
 
-export function Background() {
+export default function Background() {
 	const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 1, tension: 50, friction: 40 } }));
 	return (
 		<div className={s.container} onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>

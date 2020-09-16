@@ -11,6 +11,55 @@
 	-webkit-text-stroke-color: rgba(255, 255, 255);
 }
 
+.mainText {
+	position: "absolute";
+	bottom: 0;
+	transform: "translate(-50%, -50%)";
+	word-wrap: "none";
+	white-space: "nowrap";
+}
+
+.textOnTop {
+	top: "16vh";
+	left: "0";
+	right: "0";
+}
+
+.textOnBot {
+	top: "10vh";
+	left: "0";
+	right: "0";
+}
+
+.outlinedHiddenText {
+	z-index: 1;
+}
+
+.filledHiddenText {
+	color: "#fff";
+	z-index: -1;
+}
+.transparentImage {
+	position: absolute;
+	width: "1200px";
+	filter: "brightness(0.6)";
+	height: "960px";
+}
+.block {
+	background: "black";
+	position: absolute;
+	min-width: "60ch";
+	width: "45vw";
+	height: "45vw";
+	max-width: "100ch";
+	top: "55%";
+	bottom: 0;
+	left: "50%";
+	right: "50%";
+	transform: "translate(-50%, -50%)";
+	z-index: 0;
+}
+
 .row {
 	width: 192%;
 	text-align: center;

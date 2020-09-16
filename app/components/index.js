@@ -1,6 +1,7 @@
+import React from "react";
 import "./index.css";
 
-import { Background } from "./background";
-import { Text } from "./frontText";
+const Background = React.lazy(() => import("./background"));
+const Text = React.lazy(() => import("./frontText"));
 
 export { Background, Text };

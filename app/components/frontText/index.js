@@ -1,9 +1,8 @@
 import React from "react";
 
+import PropTypes from "prop-types";
 import Parallax, { Layer } from "react-parallax-scroll";
 
-import Typography from "@material-ui/core/Typography";
-import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/styles";
 import { useStyles } from "containers/styles/useStyles";
 
@@ -19,34 +18,34 @@ class FrontText extends React.Component {
 		return (
 			<Parallax>
 				<div className={s.bit}>
-					<Typography variant="h1" className={`${classes.outlinedHiddenText} ${classes.mainText} ${classes.textOnBot}`}>
+					<h1 className={`${classes.outlinedHiddenText} ${classes.mainText} ${classes.textOnBot}`}>
 						<Layer settings={{ speed: 1, type: ["translateX"] }}>
 							<span className={`${s.outlinedText} ${s.row}`}>
 								<span>{textTOP}</span>
 							</span>
 						</Layer>
-					</Typography>
-					<Typography variant="h1" className={`${classes.filledHiddenText} ${classes.mainText} ${classes.textOnBot}`}>
+					</h1>
+					<h1 className={`${classes.filledHiddenText} ${classes.mainText} ${classes.textOnBot}`}>
 						<Layer settings={{ speed: 1, type: ["translateX"] }}>
 							<span className={s.row}>
 								<span>{textTOP}</span>
 							</span>
 						</Layer>
-					</Typography>
-					<Typography variant="h1" className={`${classes.outlinedHiddenText} ${classes.mainText} ${classes.textOnTop}`}>
+					</h1>
+					<h1 className={`${classes.outlinedHiddenText} ${classes.mainText} ${classes.textOnTop}`}>
 						<Layer settings={{ speed: -1, type: ["translateX"] }}>
 							<span className={`${s.outlinedText} ${s.row}`}>
 								<span>{textBOT}</span>
 							</span>
 						</Layer>
-					</Typography>
-					<Typography variant="h1" className={`${classes.filledHiddenText} ${classes.mainText} ${classes.textOnTop}`}>
+					</h1>
+					<h1 className={`${classes.filledHiddenText} ${classes.mainText} ${classes.textOnTop}`}>
 						<Layer settings={{ speed: -1, type: ["translateX"] }}>
 							<span className={s.row}>
 								<span>{textBOT}</span>
 							</span>
 						</Layer>
-					</Typography>
+					</h1>
 				</div>
 			</Parallax>
 		);
@@ -57,4 +56,4 @@ FrontText.propTypes = {
 	classes: PropTypes.object.isRequired,
 };
 
-export const Text = withStyles(useStyles)(FrontText);
+export default withStyles(useStyles)(FrontText);

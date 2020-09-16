@@ -1,16 +1,14 @@
 {
-	"name": "vk-parser",
-	"version": "1.0.0",
-	"main": "index.js",
+	"name": "portfloio",
 	"author": "vyun-d1488 <ilyaspiypiy@gmail.com>",
 	"license": "MIT",
 	"scripts": {
 		"server:start": "node ./build/index.js",
 		"server:dev": "nodemon ./build/index.js",
-		"build:clean": "rimraf ./build/public",
-		"build:babel": "babel -w src --out-dir build/ --copy-files",
-		"build:dev": "yarn build:clean && cross-env NODE_ENV=development webpack -w --config internals/webpack/webpack.dev.babel.js",
-		"build:prod": "yarn build:clean && cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.babel.js"
+		"build:clean": "rimraf ./build",
+		"build:babel": "babel src --out-dir build/ --copy-files",
+		"build:dev": "yarn build:clean && yarn build:babel && cross-env NODE_ENV=development webpack -w --config internals/webpack/webpack.dev.babel.js",
+		"build:prod": "yarn build:clean && yarn build:babel && cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.babel.js"
 	},
 	"devDependencies": {
 		"babel-cli": "6.24.1",
