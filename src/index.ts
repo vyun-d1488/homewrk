@@ -16,11 +16,12 @@ function main() {
 
 		NativeEvent.cluster(cluster);
 
-		setTimeout(() => App.loadWorker(), 1000 * 60);
+		setTimeout(() => {
+			App.loadWorker();
+		}, 1000 * 60);
 	} else {
 		App.loadServer();
-
-		console.log(`Worker ${process.pid} started`);
 	}
 }
+
 main();
