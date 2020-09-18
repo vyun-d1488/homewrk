@@ -548,3 +548,108 @@
 [2020-9-18 12:39:36] [INFO] Routes :: Mounting API Routes...
 [2020-9-18 12:39:36] [INFO] Server :: Booting @ Master...
 [2020-9-18 12:39:31] [INFO] Server :: Cluster with ProcessID '2612' Connected!
+[2020-9-18 13:23:22] [INFO] Routes :: Mounting API Routes...
+[2020-9-18 13:23:22] [INFO] Configuration :: Booting @ Master...
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '3604' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '8824' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '8332' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '5576' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '8824' Disconnected!
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '8824' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11568' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '8332' Disconnected!
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '8332' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '3604' Disconnected!
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '3604' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '12232' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '5748' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '5576' Disconnected!
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '5576' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11568' Disconnected!
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11568' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '3188' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11516' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '12232' Disconnected!
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '12232' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '10296' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '5748' Disconnected!
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '5748' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '6116' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11516' Disconnected!
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11516' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '10296' Disconnected!
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '10296' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11728' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11672' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11672' Disconnected!
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11672' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '6116' Disconnected!
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '3188' Disconnected!
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '6116' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '3188' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11876' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11964' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11944' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11728' Disconnected!
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11728' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '10668' has responded after it was forked! 
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11876' Disconnected!
+[2020-9-18 13:23:22] [INFO] Server :: Cluster with ProcessID '11876' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:25:12] [INFO] Routes :: Mounting API Routes...
+[2020-9-18 13:25:12] [INFO] Configuration :: Booting @ Master...
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '11312' has responded after it was forked! 
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '8524' has responded after it was forked! 
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '12260' has responded after it was forked! 
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '4544' has responded after it was forked! 
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '11312' Disconnected!
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '11312' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '10944' has responded after it was forked! 
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '4544' Disconnected!
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '4544' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '8524' Disconnected!
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '8524' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '12260' Disconnected!
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '12260' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '11804' has responded after it was forked! 
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '11808' has responded after it was forked! 
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '2232' has responded after it was forked! 
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '10944' Disconnected!
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '10944' is Dead with Code '1, and signal: 'null'
+[2020-9-18 13:25:12] [INFO] Server :: Cluster with ProcessID '7704' has responded after it was forked! 
+[2020-9-18 13:25:45] [INFO] Routes :: Mounting API Routes...
+[2020-9-18 13:25:45] [INFO] Configuration :: Booting @ Master...
+[2020-9-18 13:25:45] [INFO] Server :: Cluster with ProcessID '7952' has responded after it was forked! 
+[2020-9-18 13:25:45] [INFO] Server :: Cluster with ProcessID '9820' has responded after it was forked! 
+[2020-9-18 13:25:45] [INFO] Server :: Cluster with ProcessID '5580' has responded after it was forked! 
+[2020-9-18 13:25:45] [INFO] Server :: Cluster with ProcessID '4372' has responded after it was forked! 
+[2020-9-18 13:25:55] [INFO] Routes :: Mounting API Routes...
+[2020-9-18 13:25:55] [INFO] Server :: Booting @ Master...
+[2020-9-18 13:25:45] [INFO] Server :: Cluster with ProcessID '5580' Connected!
+[2020-9-18 13:25:55] [INFO] Routes :: Mounting API Routes...
+[2020-9-18 13:25:55] [INFO] Server :: Booting @ Master...
+[2020-9-18 13:25:45] [INFO] Server :: Cluster with ProcessID '9820' Connected!
+[2020-9-18 13:25:55] [INFO] Routes :: Mounting API Routes...
+[2020-9-18 13:25:55] [INFO] Server :: Booting @ Master...
+[2020-9-18 13:25:45] [INFO] Server :: Cluster with ProcessID '7952' Connected!
+[2020-9-18 13:25:55] [INFO] Routes :: Mounting API Routes...
+[2020-9-18 13:25:55] [INFO] Server :: Booting @ Master...
+[2020-9-18 13:25:45] [INFO] Server :: Cluster with ProcessID '4372' Connected!
+[2020-9-18 13:26:26] [INFO] Routes :: Mounting API Routes...
+[2020-9-18 13:26:26] [INFO] Configuration :: Booting @ Master...
+[2020-9-18 13:26:26] [INFO] Server :: Cluster with ProcessID '4892' has responded after it was forked! 
+[2020-9-18 13:26:26] [INFO] Server :: Cluster with ProcessID '12084' has responded after it was forked! 
+[2020-9-18 13:26:26] [INFO] Server :: Cluster with ProcessID '11892' has responded after it was forked! 
+[2020-9-18 13:26:26] [INFO] Server :: Cluster with ProcessID '5496' has responded after it was forked! 
+[2020-9-18 13:26:34] [INFO] Routes :: Mounting API Routes...
+[2020-9-18 13:26:34] [INFO] Server :: Booting @ Master...
+[2020-9-18 13:26:26] [INFO] Server :: Cluster with ProcessID '4892' Connected!
+[2020-9-18 13:26:34] [INFO] Routes :: Mounting API Routes...
+[2020-9-18 13:26:34] [INFO] Server :: Booting @ Master...
+[2020-9-18 13:26:26] [INFO] Server :: Cluster with ProcessID '11892' Connected!
+[2020-9-18 13:26:34] [INFO] Routes :: Mounting API Routes...
+[2020-9-18 13:26:34] [INFO] Server :: Booting @ Master...
+[2020-9-18 13:26:26] [INFO] Server :: Cluster with ProcessID '5496' Connected!
+[2020-9-18 13:26:34] [INFO] Routes :: Mounting API Routes...
+[2020-9-18 13:26:34] [INFO] Server :: Booting @ Master...
+[2020-9-18 13:26:26] [INFO] Server :: Cluster with ProcessID '12084' Connected!
+[2020-9-18 13:26:26] [INFO] Worker :: Booting @ Master...
