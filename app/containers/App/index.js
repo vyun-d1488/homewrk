@@ -1,14 +1,5 @@
-import React, { Suspense } from "react";
-
-import { Background, Text } from "components";
+import React from "react";
 
 export function App() {
-	return (
-		<Suspense fallback={<div>Загрузка...</div>}>
-			<div>
-				<Background />
-				<Text />
-			</div>
-		</Suspense>
-	);
+	return <h1>HI</h1>;
 }
