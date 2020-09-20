@@ -3,9 +3,9 @@
 	"author": "vyun-d1488 <ilyaspiypiy@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"server:start": "node ./build/index.js",
-		"server:dev": "yarn build:tsc && nodemon ./src/index.ts",
-		"build:clean": "rimraf ./build",
+		"server:start": "node ./dist/index.js",
+		"server:dev": "nodemon ./src/index.ts",
+		"build:clean": "rimraf ./dist && rimraf ./public",
 		"build:tsc": "tsc -p .",
 		"build:dev": "yarn build:clean && yarn build:tsc && cross-env NODE_ENV=development webpack -w --config internals/webpack/webpack.dev.babel.js",
 		"build:prod": "yarn build:clean && yarn build:tsc && cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.babel.js"
