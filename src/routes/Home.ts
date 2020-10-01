@@ -1,14 +1,11 @@
-import { Router, Request, Response } from "express";
+import { Router } from "express";
+
+import { cache } from "./../providers/Cache";
+
+import HomeController from "../controllers/HomeController";
 
 const router = Router();
 
-router.post(
-	"/",
-	(req: Request, res: Response): Response => {
-		return res.json({
-			msg: "Home",
-		});
-	}
-);
+router.get("/", cache(10), HomeController.index);
 
 export default router;

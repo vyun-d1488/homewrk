@@ -1,27 +1,25 @@
+import os from "os";
+import cluster from "cluster";
+
 import App from "./providers/App";
 import NativeEvent from "./exception/NativeEvent";
 
-import { cpus } from "os";
-import cluster from "cluster";
+if (cluster.isMaster) {
+	const CPUS: any = os.cpus();
 
-function main() {
-	const numCPUs = cpus();
+	NativeEvent.process();
 
-	if (cluster.isMaster) {
-		NativeEvent.process();
+	App.clearConsole();
 
-		App.loadConfiguration();
+	App.loadConfiguration();
 
-		numCPUs.forEach(() => cluster.fork());
+	CPUS.forEach(() => cluster.fork());
 
-		NativeEvent.cluster(cluster);
+	NativeEvent.cluster(cluster);
 
-		setTimeout(() => {
-			App.loadWorker();
-		}, 1000 * 60);
-	} else {
-		App.loadServer();
-	}
+	setTimeout(() => App.loadWorker(), 1000 * 60);
+} else {
+	App.loadDatabase();
+
+	App.loadServer();
 }
-
-main();

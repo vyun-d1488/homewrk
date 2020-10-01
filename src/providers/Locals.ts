@@ -1,6 +1,6 @@
 import { Application } from "express";
-import * as path from "path";
-import * as dotenv from "dotenv";
+import path from "path";
+import dotenv from "dotenv";
 
 type Object = {
 	[name: string]: any;
@@ -14,8 +14,18 @@ class Locals {
 		const url = process.env.APP_URL || `http://localhost:${port}`;
 		const isCORSEnabled = process.env.CORS_ENABLED || true;
 		const apiPrefix = process.env.API_PREFIX || "api";
+		const dbUserName = process.env.NODE_ORACLEDB_USERNAME;
+		const dbPassword = process.env.NODE_ORACLEDB_PASSWORD;
+		const connectionService = process.env.NODE_ORACLEDB_CONNECTIONSTRING;
+		const csvPath =
+			process.env.CSV_PATH ||
+			path.resolve(process.cwd() + "/csv/data.csv");
 
 		return {
+			csvPath,
+			dbUserName,
+			dbPassword,
+			connectionService,
 			apiPrefix,
 			isCORSEnabled,
 			port,

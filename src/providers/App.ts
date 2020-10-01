@@ -3,7 +3,9 @@ import * as dotenv from "dotenv";
 
 import Express from "./Express";
 
+import { Database } from "./Database";
 import Log from "../middlewares/Log";
+import Players from "../models/Players";
 
 class App {
 	public clearConsole(): void {
@@ -13,6 +15,15 @@ class App {
 	public loadConfiguration(): void {
 		Log.info("Configuration :: Booting @ Master...");
 		dotenv.config({ path: path.join(process.cwd(), "/.env") });
+	}
+
+	public loadDatabase(): void {
+		Log.info("Database :: Booting @ Master...");
+		Database.init(() => {
+			Log.info("Database :: Mount...");
+
+			Players.mount();
+		});
 	}
 
 	public loadWorker(): void {
