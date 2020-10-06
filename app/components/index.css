@@ -17,13 +17,10 @@
 	cursor: default;
 }
 
-span {
-	display: block;
-}
-
 body {
 	text-transform: uppercase;
 	text-rendering: optimizeLegibility;
 	overflow-x: hidden;
+	color: white;
 	background-color: rgb(0, 0, 0);
 }

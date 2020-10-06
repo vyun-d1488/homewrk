@@ -5,13 +5,13 @@ import App from "./providers/App";
 import NativeEvent from "./exception/NativeEvent";
 
 if (cluster.isMaster) {
-	const CPUS: any = os.cpus();
-
 	NativeEvent.process();
 
 	App.clearConsole();
 
 	App.loadConfiguration();
+
+	const CPUS: any = os.cpus();
 
 	CPUS.forEach(() => cluster.fork());
 
@@ -19,7 +19,7 @@ if (cluster.isMaster) {
 
 	setTimeout(() => App.loadWorker(), 1000 * 60);
 } else {
-	App.loadDatabase();
-
 	App.loadServer();
+
+	App.loadDatabase();
 }

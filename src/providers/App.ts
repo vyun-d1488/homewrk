@@ -1,5 +1,5 @@
-import * as path from "path";
-import * as dotenv from "dotenv";
+import path from "path";
+import dotenv from "dotenv";
 
 import Express from "./Express";
 
@@ -21,8 +21,6 @@ class App {
 		Log.info("Database :: Booting @ Master...");
 		Database.init(() => {
 			Log.info("Database :: Mount...");
-
-			Players.mount();
 		});
 	}
 

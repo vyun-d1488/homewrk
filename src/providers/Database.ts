@@ -16,21 +16,16 @@ export class Database {
 				password: dbPassword,
 				connectString: connectionService,
 				poolAlias: "default",
-				poolMin: 1,
-				poolMax: 50,
-				poolTimeout: 300,
 				queueMax: 200000,
-				queueTimeout: 200000,
+				queueTimeout: 100000,
 			},
-			(error: Error) => {
+			(error) => {
 				if (error) {
 					Log.error("Failed to connect to the oracledb server");
-					Log.error(String(error));
 				} else {
 					Log.info(
 						"Connected to oracledb server at : " + connectionService
 					);
-
 					fetch();
 				}
 			}

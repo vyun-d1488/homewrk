@@ -1,12 +1,15 @@
 import { Request, Response, NextFunction } from "express";
+import Players from "../models/Players";
 
 class Home {
 	public static index(
 		req: Request,
 		res: Response,
 		next: NextFunction
-	): Response {
-		return res.status(200).send("Hello world");
+	): Object {
+		return Players.mount(() => {
+			return res.status(200).send("success");
+		});
 	}
 }
 

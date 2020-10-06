@@ -1,9 +1,16 @@
 import React from "react";
-import axios from "axios";
+
+import { Button } from "components";
 
 export function App() {
-	axios.get(`/api`).then((res) => {
-		console.log(res.data);
-	});
-	return <h1>This is app</h1>;
+	return (
+		<div>
+			<Button text="insertdata" params="api/insert" />
+			<Button text="task1" params="api/task1" />
+			<Button text="task2" params="api/task2" />
+			<Button text="task3" params="api/task3" />
+			<Button text="task4" params="api/task5" />
+			<Button text="task4" params="api/task10" />
+		</div>
+	);
 }
